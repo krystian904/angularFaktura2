@@ -1,0 +1,37 @@
+.clear{
+
+  clear: left;
+}
+.dane{
+
+
+}
+
+.dane .box-2-left{
+  float: left;
+  width: 48%;
+  margin: auto;
+  display: inline-block
+
+}
+
+.dane .box-10-left{
+  float: left;
+
+  margin: auto;
+  display: inline-block
+
+}
+
+.width5{
+  width: 8%;
+
+}
+.width15{
+  width: 15%;
+
+}
+
+.dane .box-10-left input{
+  width: 75%;
+}

@@ -1,0 +1,19 @@
+#menu ul{
+    list-style-type: none;
+    margin: 0 20%;
+    padding: 0;
+    overflow: hidden;
+  text-align: center;
+
+}
+#menu ul li{
+  float: left;
+
+
+}
+
+#menu ul li button{
+  margin: 20px;
+
+
+}

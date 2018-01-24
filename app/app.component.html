@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<div id="menu">
+  <ul>
+    <li><button (click)="menuPrzelacz(1)">Pokaz Liste</button></li>
+    <li><button (click)="menuPrzelacz(2)">Nowa Faktura</button></li>
+    <li><button (click)="menuPrzelacz(3)">zmien ustawienia</button></li>
+
+  </ul>
+
+</div>
+
+<div id="content">
+  <div *ngIf="menuDodajBool ==true"><app-nowa-faktura></app-nowa-faktura></div>
+  <div *ngIf="menuUstawieniaBool ==true"><app-ustawienia></app-ustawienia></div>
+  <div *ngIf="menuListaBool ==true"><app-lista></app-lista></div>
+
+
+</div>
