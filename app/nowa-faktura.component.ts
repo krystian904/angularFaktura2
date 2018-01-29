@@ -1,25 +1,36 @@
+import {MessageService} from './message.service.ts';
 import { Faktura } from './Faktura.model.ts';
-import {ListaComponent } from './lista.component';
+import {ListaComponent } from './lista.component.ts';
+import { ServiceListaFakturService } from './service-lista-faktur.service.ts';
 import { Component, OnInit } from '@angular/core';
+import { LocalStorage } from 'angular-web-storage';
+
 
 @Component({
   selector: 'app-nowa-faktura',
   templateUrl: './nowa-faktura.component.html',
-  styleUrls: ['./nowa-faktura.component.css']
+  styleUrls: ['./nowa-faktura.component.css'],
+
+
+
 })
 export class NowaFakturaComponent implements OnInit {
-  sprzedawcaName:string;
-  sprzedawcaName="nazwa firmy";
+  sprzedawcaName : string;
+  sprzedawcaName = "nazwa firmy";
 
-  sprzedawcaAdres:string;
+  sprzedawcaAdres : string;
   sprzedawcaAdres="adres firmy";
 
-  sprzedawcaNIP:string;
-  sprzedawcaNIP="adres sprzedawcaNIP";
+  sprzedawcaNIP : string;
+  sprzedawcaNIP = "adres sprzedawcaNIP";
 
 
-  ListaCom : ListaComponent;
-  constructor() { }
+
+
+  constructor(private service : ServiceListaFakturService) {
+
+
+ }
 
   ngOnInit() {
 
@@ -27,8 +38,11 @@ export class NowaFakturaComponent implements OnInit {
   }
 
   wyslji(){
-    this.ListaCom.send(new Faktura);
-
+    this.service.addFakture(new Faktura());
   }
 
+  ilosc(){
+    this.service.dlug();
+
+  }
 }

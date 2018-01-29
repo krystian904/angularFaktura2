@@ -1,4 +1,5 @@
 import { Faktura } from './Faktura.model.ts';
+import {MessageService} from './message.service.service.ts';
 import { Component  , NgIf} from '@angular/core';
 
 @Component({
@@ -38,7 +39,7 @@ export class AppComponent {
     this.menuDodajBool =false;
     this.menuUstawieniaBool =true;
     this.menuListaBool =false;
-
+    
   }
 
   menuPrzelacz(numer : number){
