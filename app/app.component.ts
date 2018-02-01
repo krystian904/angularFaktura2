@@ -2,10 +2,20 @@ import { Faktura } from './Faktura.model';
 import {MessageService} from './message.service';
 import { Component } from '@angular/core';
 
+
+import { NowaFakturaComponent } from './nowa-faktura.component';
+import { MenuComponent } from './menu/menu.component';
+import { ListaComponent } from './lista.component';
+import { UstawieniaComponent } from './ustawienia.component';
+import {ServiceListaFakturService} from './service-lista-faktur.service';
+import { LocalStorage } from 'angular-web-storage';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [MessageService , ServiceListaFakturService],
 })
 export class AppComponent {
   title = 'Program Faktury';

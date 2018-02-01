@@ -7,7 +7,7 @@ export class ServiceListaFakturService {
 listaFaktur: Faktura[];
 
   constructor( ) {
-
+    this.listaFaktur = [];
   }
 
   add(text : string){
