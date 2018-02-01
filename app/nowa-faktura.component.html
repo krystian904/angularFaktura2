@@ -33,15 +33,15 @@
     <div class="clear"></div>
     <div class="row">
       <div class="box-10-left width5">1</div>
-       <div class="box-10-left width15"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
-       <div class="box-10-left width5"><input type="text" #nazwaTowaru></div>
+       <div class="box-10-left width15" ><input type="text" #nazwaTowaru></div>
+       <div class="box-10-left width5"><input type="text" #ilosc></div>
+       <div class="box-10-left width5"><input type="text" #JM></div>
+       <div class="box-10-left width5"><input type="text" #Rabat></div>
+       <div class="box-10-left width5"><input type="text" #cenaNetto></div>
+       <div class="box-10-left width5"><input type="text" #wartoscNeto></div>
+       <div class="box-10-left width5"><input type="text" #vat></div>
+       <div class="box-10-left width5"><input type="text" #warWat></div>
+       <div class="box-10-left width5"><input type="text" #wartBrutto></div>
 
       <div class="clear"></div>
   </div>
@@ -49,20 +49,27 @@
 
 </div>
 
-<div class="dane">
-  <div class="box-2-left">
-    <p>..............................</p>
-    <p>podpis sprzedawcy</p>
-  </div>
-  <div class="box-2-left">
-    <p>..............................</p>
-    <p>podpis klienta</p>
-  </div>
+
 
   <div class="dane">
     <div class="center">
-      <button (click)="wyslji()"> wyslji</button>
-      <button (click)="ilosc()"> ilosc</button>
+      <button (click)="wyslji(
+        nazwaFirmy.value,
+        adresFirmy.value,
+        NIPFirmy.value,
+
+        nazwaTowaru.value,
+        ilosc.value,
+        JM.value,
+        Rabat.value,
+        cenaNetto.value,
+        wartoscNeto.value,
+        vat.value,
+        warWat.value,
+        wartBrutto.value
+
+      )"> wyslji</button>
+      <button (click)="dl()"> ilosc</button>
     </div>
 
   </div>

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule ,  NgIf  } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -9,7 +9,7 @@ import { ListaComponent } from './lista.component';
 import { UstawieniaComponent } from './ustawienia.component';
 import {ServiceListaFakturService} from './service-lista-faktur.service';
 import { LocalStorage } from 'angular-web-storage';
-import { MessageService } from './message.service.ts';
+import { MessageService } from './message.service';
 
 
 @NgModule({

@@ -1,4 +1,5 @@
-import { Faktura } from './Faktura.model.ts';
+import { Faktura } from './Faktura.model';
+import { ServiceListaFakturService } from './service-lista-faktur.service';
 import { Component, OnInit  , Input} from '@angular/core';
 
 @Component({
@@ -8,22 +9,21 @@ import { Component, OnInit  , Input} from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
+faktury: Faktura[];
 
-
-  constructor() {
+  constructor(private service : ServiceListaFakturService) {
 
 }
 
   ngOnInit() {
+    this.faktury = this.service.listaFaktur;
   }
 
-  send(f : Faktura){
 
-    
-  }
 
-  pokazIlosc() :void{
-
+  pokazIlosc(){
+    this.service.dlug();
+    console.log(this.faktury);
   }
 
 }

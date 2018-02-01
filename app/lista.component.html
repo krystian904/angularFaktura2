@@ -1,4 +1,35 @@
 <p>
 
   <button type="button" name="button" (click)="pokazIlosc()">pokazIlosc</button>
+
 </p>
+
+<div class="box">
+  <div class="rekord" *ngFor="let rekord of faktury">
+
+    <div class="box-2-left">
+      <p>sprzedawca nazwa :{{rekord.SprzedawcaNazwa}}</p>
+      <p>Sprzedaca adres :{{rekord.SprzedawcaAdres}}</p>
+      <p>Sprzedawca NIP :{{rekord.SprzedawcaNIP}}</p>
+   </div>
+
+  <div class="box-2-left">
+      <p>Klient Nazwa : {{rekord.KlientNazwa}}</p>
+      <p>Klient adres : {{rekord.KlientAdres}}</p>
+      <p>KlientNIP :{{rekord.KlientNIP}}</p>
+  </div>
+  <div class="clear"></div>
+
+
+    <div class="box-10-left"><p>nazwa towaru <br>{{rekord.nazwaTowaru}}</p></div>
+    <div class="box-10-left"><p>ilosc <br> {{rekord.ilosc}}</p></div>
+    <div class="box-10-left"><p>Jednosta miary <br>{{rekord.JM}}</p></div>
+    <div class="box-10-left"><p>rabat <br>{{rekord.rabat}}</p></div>
+    <div class="box-10-left"><p> cenna neto <br>{{rekord.cenaNeto}}</p></div>
+    <div class="box-10-left"><p>vat <br>{{rekord.vat}}</p></div>
+    <div class="box-10-left"><p>wat <br>{{rekord.warVat}}</p></div>
+    <div class="box-10-left"><p>wartosc Bruto <br> {{rekord.wartBruto}}</p></div>
+    <div class="clear"></div>
+
+</div>
+</div>

@@ -1,6 +1,6 @@
-import { Faktura } from './Faktura.model.ts';
-import {MessageService} from './message.service.service.ts';
-import { Component  , NgIf} from '@angular/core';
+import { Faktura } from './Faktura.model';
+import {MessageService} from './message.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +12,14 @@ export class AppComponent {
 
 
 
-  menuDodajBool:boolean;
-  menuDodajBool =false;
+//  menuDodajBool:boolean;
+  menuDodajBool= false;
 
-  menuUstawieniaBool:boolean;
-  menuUstawieniaBool =false;
+//  menuUstawieniaBool:boolean;
+  menuUstawieniaBool= false;
 
-  menuListaBool:boolean;
-  menuListaBool =true;
+//  menuListaBool:boolean;
+  menuListaBool= true;
 
   menuLista(){
     console.log("  menuLista()");
@@ -39,7 +39,7 @@ export class AppComponent {
     this.menuDodajBool =false;
     this.menuUstawieniaBool =true;
     this.menuListaBool =false;
-    
+
   }
 
   menuPrzelacz(numer : number){

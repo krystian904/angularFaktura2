@@ -1,0 +1,28 @@
+.clear{
+
+  clear: left;
+}
+
+.rekord{
+  margin-top: 5%;
+  background-color: #66ff99;
+
+}
+.box-2-left{
+  float: left;
+  width: 48%;
+  margin: auto;
+  display: inline-block
+
+}
+.box-10-left{
+  float: left;
+
+  margin: auto;
+  display: inline-block;
+  width: 15%;
+  margin: 2%;
+  padding: 3%;
+  background-color: #33ccff;
+
+}
